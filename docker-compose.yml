@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  basket.api:
+    image: basketapi:v5
+    container_name: basket-container-api
+    build:
+      context: .
+      dockerfile: Basket.API/Dockerfile
+  order.api:
+    image: orderapi:v5
+    container_name: order-container-api
+    build:
+      context: .
+      dockerfile: Order.API/Dockerfile
