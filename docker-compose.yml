@@ -13,3 +13,6 @@ services:
     build:
       context: .
       dockerfile: Order.API/Dockerfile
+  sqlserver.database:
+    image: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+    container_name: mssqlserver-database
